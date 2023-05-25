@@ -39,7 +39,7 @@ end
 
 % Plot confusion matrix
 confMatTraining = confusion_matrix(trainingData.y, trainingData.pred, classNames, ...
-    'title', 'Training data', 'cLims', [0 0.7]);
+    'title', 'Training data', 'cLims', [0 0.7], 'plotText', false);
 
 % Compute accuracy of test data (max-voted strategy)
 compute_accuracy_maxvoted(testData.y, testData.pred);

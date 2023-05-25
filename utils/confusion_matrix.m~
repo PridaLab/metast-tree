@@ -1,13 +1,13 @@
 function [varargout] = confusion_matrix(y, pred, classNames, varargin)
 
     dirThisFile = fileparts(matlab.desktop.editor.getActiveFilename);
-    dirImages = fullfile(fileparts(dirThisFile), 'images');
+     
     
     % Get optional values
     p = inputParser;
     addParameter(p,'cLims', [], @isnumeric);
     addParameter(p,'plotText', true, @islogical);
-    addParameter(p,'saveName', fullfile(dirImages, 'confusion_matrix.png'), @isstr);
+    addParameter(p,'saveName', fullfile(dirThisFile), @isstr);
     addParameter(p,'title', '', @isstr);
     parse(p,varargin{:});
     cLims = p.Results.cLims;
