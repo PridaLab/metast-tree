@@ -2,7 +2,7 @@
 
 LFP analysis and classification of metastases
 
-## process_data()
+## Load LFP data
 
 The MATLAB function `[trainingData, testData, trainingLines, testLines] = process_data(trainingDataRaw, testDataRaw)` 
 
