@@ -2,9 +2,7 @@
 
 LFP analysis and classification of metastases
 
-## Load data
-
-### process_data()
+## process_data()
 
 The MATLAB function `[trainingData, testData, trainingLines, testLines] = process_data(trainingDataRaw, testDataRaw)` 
 
@@ -16,15 +14,10 @@ The MATLAB function `[trainingData, testData, trainingLines, testLines] = proces
 	- `trainingLines`: name of the animal line of each row of the training sessions
 	- `testLines`: name of the animal line of each row of the test sessions
 
-### Decision trees
+## Decision trees
 
-Loaded in [decision-trees/decision_trees.mat](https://github.com/PridaLab/metast-tree/blob/main/decision-trees/decision_trees.mat)
-
-
-## Prediction
-
-Prediction of data into `sham`, `breast`, `melanoma` or `lung` categories can be achieved with:
+Already trained decision trees are loaded in [decision-trees/decision_trees.mat](https://github.com/PridaLab/metast-tree/blob/main/decision-trees/decision_trees.mat). They can be used to predict new data into `sham`, `breast`, `melanoma` or `lung` categories can be achieved with:
 
 ```
-	prediction = decisionTrees{iModel}.predict(trainingData.X);
+prediction = decisionTrees{iModel}.predict(trainingData.X);
 ```
