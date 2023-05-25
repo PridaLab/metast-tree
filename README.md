@@ -40,4 +40,5 @@ The MATLAB function `confusion_matrix(ytrue, ypred, classNames, <optional>)` com
 	- `confMat`: `#classes x #classes` confusion matrix.
 
 Output example
-![alt text]((https://github.com/PridaLab/metast-tree/blob/main/images/confusion_matrix.png)
+
+![alt text](https://github.com/PridaLab/metast-tree/blob/main/images/confusion_matrix.png)
